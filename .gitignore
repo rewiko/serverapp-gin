@@ -1,2 +1,3 @@
 mongo-data
 src/gin-bin
+src/storage.db
