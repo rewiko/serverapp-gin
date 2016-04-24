@@ -1,0 +1,20 @@
+version: '2'
+services:
+    serverapp:
+        build: .
+        volumes: 
+            - ./src/:/go/src/github.com/rewiko/gin-app
+        links:
+            - mongo
+        depends_on:
+            - mongo
+        ports:
+            - "8080:8080"
+    mongo:
+        image: mongo:3.2
+        volumes: 
+            - ./mongo-data:/data/db
+        ports:
+            - "27017:27017"
+
+
