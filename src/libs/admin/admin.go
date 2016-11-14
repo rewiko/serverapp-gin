@@ -3,11 +3,11 @@ package admin
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/rewiko/gin-app/libs/admin/model"
-	"github.com/rewiko/gin-app/libs/admin/resource"
-	"github.com/rewiko/gin-app/libs/admin/storage"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go-adapter/gingonic"
+	"github.com/rewiko/app/libs/admin/model"
+	"github.com/rewiko/app/libs/admin/resource"
+	"github.com/rewiko/app/libs/admin/storage"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/jsonapi/api2go-adapter/gingonic"
 )
 
 //func Main(g *gin.Engine) {

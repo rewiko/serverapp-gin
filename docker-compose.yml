@@ -3,18 +3,18 @@ services:
     serverapp:
         build: .
         volumes: 
-            - ./src/:/go/src/github.com/rewiko/gin-app
+            - ./src/:/go/src/github.com/rewiko/app
         links:
-            - mongo
+            - cassandra
         depends_on:
-            - mongo
+            - cassandra
         ports:
             - "8080:8080"
-    mongo:
-        image: mongo:3.2
+    cassandra:
+        image: cassandra:2.2
         volumes: 
-            - ./mongo-data:/data/db
+            - ./cassandra-data:/var/lib/cassandra
         ports:
-            - "27017:27017"
+            - "9042:9042"
 
 

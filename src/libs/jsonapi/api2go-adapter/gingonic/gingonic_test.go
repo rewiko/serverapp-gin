@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
-	. "github.com/rewiko/gin-app/libs/jsonapi/api2go-adapter/gingonic"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/model"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/resource"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/storage"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/routing"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
+	. "github.com/rewiko/app/libs/jsonapi/api2go-adapter/gingonic"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/model"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/resource"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/storage"
+	"github.com/rewiko/app/libs/jsonapi/api2go/routing"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

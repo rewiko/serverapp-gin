@@ -3,7 +3,7 @@ package storage
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
-	"github.com/rewiko/gin-app/libs/admin/model"
+	"github.com/rewiko/app/libs/admin/model"
 )
 
 // InitDB creates and migrates the database

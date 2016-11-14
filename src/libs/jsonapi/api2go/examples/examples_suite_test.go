@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

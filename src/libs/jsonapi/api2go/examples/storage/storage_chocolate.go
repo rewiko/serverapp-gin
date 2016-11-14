@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/model"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/model"
 )
 
 // sorting

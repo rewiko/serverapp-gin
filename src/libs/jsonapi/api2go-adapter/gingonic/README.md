@@ -1,6 +1,6 @@
 # Gin Framework Adapter
 
-This adapter must be used in combination with [api2go](https://github.com/rewiko/gin-app/libs/jsonapi/api2go) in order to be useful.
+This adapter must be used in combination with [api2go](https://github.com/rewiko/app/libs/jsonapi/api2go) in order to be useful.
 It allows you to use api2go within your normal [gin](https://github.com/gin-gonic/gin) application.
 
 ## Example
@@ -10,8 +10,8 @@ package main
 
 import (
   "github.com/gin-gonic/gin"
-  "github.com/rewiko/gin-app/libs/jsonapi/api2go"
-  "github.com/rewiko/gin-app/libs/jsonapi/api2go-adapter/gingonic"
+  "github.com/rewiko/app/libs/jsonapi/api2go"
+  "github.com/rewiko/app/libs/jsonapi/api2go-adapter/gingonic"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
   )
 
   // Add your API resources here...
-  // see https://github.com/rewiko/gin-app/libs/jsonapi/api2go for more information
+  // see https://github.com/rewiko/app/libs/jsonapi/api2go for more information
 
   r.GET("/ping", func(c *gin.Context) {
     c.String(200, "pong")

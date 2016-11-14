@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/model"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/model"
 )
 
 // NewUserStorage initializes the storage

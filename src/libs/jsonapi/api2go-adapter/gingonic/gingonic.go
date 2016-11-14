@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/routing"
+	"github.com/rewiko/app/libs/jsonapi/api2go/routing"
 )
 
 type ginRouter struct {

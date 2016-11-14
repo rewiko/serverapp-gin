@@ -3,7 +3,7 @@ package gorillamux
 import (
 	"fmt"
 	"github.com/gorilla/mux"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/routing"
+	"github.com/rewiko/app/libs/jsonapi/api2go/routing"
 	"net/http"
 	"strings"
 )

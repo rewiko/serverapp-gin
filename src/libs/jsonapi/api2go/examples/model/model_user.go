@@ -3,7 +3,7 @@ package model
 import (
 	"errors"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/jsonapi"
+	"github.com/rewiko/app/libs/jsonapi/api2go/jsonapi"
 )
 
 // User is a generic database user

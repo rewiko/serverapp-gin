@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/jsonapi"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/routing"
+	"github.com/rewiko/app/libs/jsonapi/api2go/jsonapi"
+	"github.com/rewiko/app/libs/jsonapi/api2go/routing"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"gopkg.in/guregu/null.v2"

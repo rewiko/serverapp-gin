@@ -17,6 +17,8 @@ func GetSession() *mgo.Session {
 
 	hostname := viper.GetString("database.mongodb.host")
 
+
+
 	if session == nil {
 		conn, err := mgo.Dial(hostname)
 		if err != nil {

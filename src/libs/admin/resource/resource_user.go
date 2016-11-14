@@ -6,9 +6,9 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/rewiko/gin-app/libs/admin/model"
-	"github.com/rewiko/gin-app/libs/admin/storage"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/admin/model"
+	"github.com/rewiko/app/libs/admin/storage"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
 )
 
 // UserResource for api2go routes

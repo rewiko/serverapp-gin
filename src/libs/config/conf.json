@@ -5,8 +5,8 @@
     },
     "database": {
         "mongodb": {
-            "host": "mongo",
-            "port": 3099
+            "host": "cassandra",
+            "port": 9042
         },
         "redis": {
             "host": "198.0.0.1",

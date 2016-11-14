@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-
+	"log"
 	"github.com/gin-gonic/gin"
-	"github.com/rewiko/gin-app/libs/admin"
-	"github.com/rewiko/gin-app/libs/config"
-	"github.com/rewiko/gin-app/libs/mongo"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
+	"github.com/rewiko/app/libs/admin"
+	"github.com/rewiko/app/libs/config"
+	"github.com/gocql/gocql"
 )
 
 type Person struct {
@@ -18,26 +16,12 @@ type Person struct {
 
 func main() {
 	r := gin.Default()
-	r.Use(mongo.MapMongo)
+	//r.Use(mongo.MapMongo)
 
 	r.GET("/", func(c *gin.Context) {
-		db := c.MustGet("mongoSession").(*mgo.Database)
-		collection := db.C("people")
-		err := collection.Insert(&Person{"Ale", "+55 53 8116 9639"},
-			&Person{"Cla", "+55 53 8402 8510"})
-		if err != nil {
-			fmt.Println(err)
-		}
-
-		result := Person{}
-		err = collection.Find(bson.M{"name": "Ale"}).One(&result)
-		if err != nil {
-			fmt.Println(err)
-		}
-		//log.Fatal("test")
 		//fmt.Println("Phone:", result)
 
-		c.JSON(200, result)
+		c.JSON(200, "test")
 	})
 
 	//admin.Main(r)
@@ -53,5 +37,18 @@ func main() {
 
 func setupDatabase() {
 	fmt.Println("Setup Database!")
-	mongo.GetSession()
+	cluster := gocql.NewCluster("cassandra")
+	cluster.Keyspace = "myproject"
+	cluster.Consistency = gocql.Quorum
+	session, _ := cluster.CreateSession()
+	defer session.Close()
+
+	// insert a tweet
+	if err := session.Query(`INSERT INTO tweet (timeline, id, text) VALUES (?, ?, ?)`,
+	"me", gocql.TimeUUID(), "hello world").Exec(); err != nil {
+		log.Fatal(err)
+
+	}
+
+	//mongo.GetSession()
 }

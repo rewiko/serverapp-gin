@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/jsonapi"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/routing"
+	"github.com/rewiko/app/libs/jsonapi/api2go/jsonapi"
+	"github.com/rewiko/app/libs/jsonapi/api2go/routing"
 )
 
 // HandlerFunc for api2go middlewares

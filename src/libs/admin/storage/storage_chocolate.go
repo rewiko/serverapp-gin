@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/jinzhu/gorm"
-	"github.com/rewiko/gin-app/libs/admin/model"
+	"github.com/rewiko/app/libs/admin/model"
 )
 
 // NewChocolateStorage initializes the storage

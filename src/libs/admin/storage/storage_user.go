@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/jinzhu/gorm"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
-	"github.com/rewiko/gin-app/libs/admin/model"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/admin/model"
 )
 
 // NewUserStorage initializes the storage

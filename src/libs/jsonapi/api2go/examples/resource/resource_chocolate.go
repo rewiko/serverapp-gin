@@ -4,9 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/model"
-	"github.com/rewiko/gin-app/libs/jsonapi/api2go/examples/storage"
+	"github.com/rewiko/app/libs/jsonapi/api2go"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/model"
+	"github.com/rewiko/app/libs/jsonapi/api2go/examples/storage"
 )
 
 // ChocolateResource for api2go routes
